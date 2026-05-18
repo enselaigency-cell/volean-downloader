@@ -15,7 +15,6 @@ ArchitecturesInstallIn64BitMode=x64compatible
 UninstallDisplayName=VOLEAN Downloader
 UninstallDisplayIcon={app}\VOLEAN Downloader.exe
 WizardStyle=modern
-SetupIconFile=static\AppIcon.ico
 ; Allow reinstall / upgrade silently
 CloseApplications=force
 

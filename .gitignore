@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+ffmpeg_bin/
+dist/
+build/
+Output/
+*.spec
+*.log
+.DS_Store

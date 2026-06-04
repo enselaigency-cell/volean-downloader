@@ -3,9 +3,11 @@
 import sys, os, socket, threading, time
 from pathlib import Path
 
-# Resolve bundle root (PyInstaller onedir: same folder as the .exe)
+# Resolve bundle root
+# PyInstaller 6.x onedir: data files go to _internal/ (sys._MEIPASS)
+# PyInstaller 5.x onedir: data files go next to the .exe
 if getattr(sys, 'frozen', False):
-    BASE_DIR = Path(sys.executable).parent
+    BASE_DIR = Path(sys._MEIPASS)   # _internal/ — where static/ and ffmpeg_bin/ live
 else:
     BASE_DIR = Path(__file__).parent
 
